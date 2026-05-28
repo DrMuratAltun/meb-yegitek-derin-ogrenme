@@ -39,6 +39,7 @@ web/.astro/
 
 # Sunumlar ve Yerel Bağımlılıklar
 sunumlar/
+web/public/sunumlar/
 node_modules/
 package-lock.json
 package.json
