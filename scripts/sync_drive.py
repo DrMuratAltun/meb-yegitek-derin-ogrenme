@@ -24,32 +24,30 @@ def fetch_drive_folder_files(folder_id):
             return []
         
         html = response.text
-        # Google Drive embedded view provides file details in script tags or HTML elements.
-        # Format usually: id: "FILE_ID", name: "FILE_NAME" or similar JS array.
-        # We can extract all occurrences of file patterns:
-        # e.g., ["id", "name", ...] or similar JS variables.
-        
-        # Regex to find file IDs and names in embedded view JSON
-        # Example pattern in WIZ data: ["FILE_ID", "FILE_NAME", ...]
-        # Let's search for matches of: id:"...", title:"..." or similar structures
         files = []
+        seen_ids = set()
         
-        # Look for typical patterns in Google Drive embedded folderview
-        # Patterns like: [null,"FILE_ID","FILE_NAME",...
+        # 1. Regex (WIZ Array Format)
         pattern = r'\["([a-zA-Z0-9_-]{25,})","([^"]+)"'
         matches = re.findall(pattern, html)
-        
-        # Filter duplicates and keep valid file records
-        seen_ids = set()
         for file_id, name in matches:
             if file_id not in seen_ids:
                 seen_ids.add(file_id)
-                # Decode unicode escapes if any
                 name = name.encode().decode('unicode-escape', errors='ignore') if '\\u' in name else name
                 files.append({"id": file_id, "name": name})
-                print(f"Bulundu: {name} -> {file_id}")
+                print(f"Bulundu (WIZ): {name} -> {file_id}")
                 
-        # Alternatif regex formatı (eğer ilk regex bulamazsa)
+        # 2. Regex (Embedded folderview modern HTML format)
+        if not files:
+            pattern_html = r'href="https://drive\.google\.com/file/d/([a-zA-Z0-9_-]{25,})/view[^"]*".*?class="flip-entry-title">([^<]+)</div>'
+            matches_html = re.findall(pattern_html, html, re.DOTALL)
+            for file_id, name in matches_html:
+                if file_id not in seen_ids:
+                    seen_ids.add(file_id)
+                    files.append({"id": file_id, "name": name.strip()})
+                    print(f"Bulundu (HTML): {name.strip()} -> {file_id}")
+                    
+        # 3. Regex (Alternatif href formatı)
         if not files:
             pattern_alt = r'href="/file/d/([a-zA-Z0-9_-]+)/view[^"]*"\s*[^>]*>([^<]+)'
             matches_alt = re.findall(pattern_alt, html)

@@ -35,3 +35,10 @@ web/dist/
 web/node_modules/
 web/.astro/
 
+# Sunumlar ve Yerel Bağımlılıklar
+sunumlar/
+node_modules/
+package-lock.json
+package.json
+
+

@@ -39,7 +39,7 @@ export const weeks: Week[] = [
       'NumPy ile tek nöronun adım adım kodlanması',
     ],
     notebooks: [
-      { name: '01_tek_noron_pizza.ipynb', desc: 'Pizza sipariş tahmin örneği ile tek nöron kodlaması', url: '' }
+      { name: '01_tek_noron_pizza.ipynb', desc: 'Pizza sipariş tahmin örneği ile tek nöron kodlaması', url: 'https://colab.research.google.com/drive/1A9lLjG7tNPKm9O1qigltLTlaGen0Wxfu' }
     ],
     datasets: ['Sentetik pizza sipariş verisi'],
     libraries: ['numpy', 'matplotlib'],
@@ -52,7 +52,7 @@ export const weeks: Week[] = [
       { label: 'NumPy Resmi Dokümantasyonu', url: 'https://numpy.org/doc/' }
     ],
     pptxFile: '01_tek_noron_pizza.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '15cMNYWxb8amgBvWyQflIEOwRGbdlFSzF',
   },
   {
     id: 2,
@@ -72,7 +72,7 @@ export const weeks: Week[] = [
       'Keras ile basit aktivasyon karşılaştırmaları',
     ],
     notebooks: [
-      { name: '02_aktivasyon_fonksiyonlari.ipynb', desc: 'Sigmoid, ReLU, Tanh ve Softmax grafiksel gösterimleri ve Keras kıyaslamaları', url: '' }
+      { name: '02_aktivasyon_fonksiyonlari.ipynb', desc: 'Sigmoid, ReLU, Tanh ve Softmax grafiksel gösterimleri ve Keras kıyaslamaları', url: 'https://colab.research.google.com/drive/1o2BfRTZBU5FJ0UtfBN2bHRWl-5S4mp1Q' }
     ],
     datasets: ['Sentetik sınıflandırma verisi'],
     libraries: ['numpy', 'matplotlib', 'keras', 'tensorflow'],
@@ -84,7 +84,7 @@ export const weeks: Week[] = [
       { label: 'Deep Learning Activation Functions', url: 'https://keras.io/api/layers/activations/' }
     ],
     pptxFile: '02_aktivasyon_fonksiyonlari.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '10Ye3KGCisresxPipRrslot1BRJRet5f9',
   },
   {
     id: 3,
@@ -103,7 +103,7 @@ export const weeks: Week[] = [
       'Çok katmanlı ağlar ile XOR probleminin çözümü',
     ],
     notebooks: [
-      { name: '03_ileri_yayilim.ipynb', desc: 'XOR problemini çözen çok katmanlı sinir ağında ileri yayılım adımları', url: '' }
+      { name: '03_ileri_yayilim.ipynb', desc: 'XOR problemini çözen çok katmanlı sinir ağında ileri yayılım adımları', url: 'https://colab.research.google.com/drive/1clMhK7C5NuheBl4Ity7IVMQ6g0OjBE1f' }
     ],
     datasets: ['XOR Veri Seti'],
     libraries: ['numpy', 'matplotlib'],
@@ -115,7 +115,7 @@ export const weeks: Week[] = [
       { label: 'Matrix Multiplication Interactive', url: 'https://matrixmultiplication.xyz/' }
     ],
     pptxFile: '03_ileri_yayilim.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '1HWmcrTk4u2TIlgciGkg22OoatHD3_uTR',
   },
   {
     id: 4,
@@ -134,7 +134,7 @@ export const weeks: Week[] = [
       'Hata oranının gradyan hesaplamasındaki rolü',
     ],
     notebooks: [
-      { name: '04_loss_fonksiyonlari.ipynb', desc: 'MSE, Binary ve Categorical Cross-Entropy hesaplarının elle ve Keras ile karşılaştırılması', url: '' }
+      { name: '04_loss_fonksiyonlari.ipynb', desc: 'MSE, Binary ve Categorical Cross-Entropy hesaplarının elle ve Keras ile karşılaştırılması', url: 'https://colab.research.google.com/drive/1_xaj68ghz5wYlXxpQarrndMLwDqUFLMr' }
     ],
     datasets: ['Sınıflandırma ve Regresyon tahmin verileri'],
     libraries: ['numpy', 'keras', 'tensorflow'],
@@ -146,7 +146,7 @@ export const weeks: Week[] = [
       { label: 'Keras Loss Functions', url: 'https://keras.io/api/losses/' }
     ],
     pptxFile: '04_loss_fonksiyonlari.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '1CuzwQsZFF_wgU3NYk89CrEMEgIveY65M',
   },
   {
     id: 5,
@@ -165,7 +165,7 @@ export const weeks: Week[] = [
       'Yerel minimum (local minima) ve eyer noktası (saddle point) tuzakları',
     ],
     notebooks: [
-      { name: '05_geri_yayilim_optimizasyon.ipynb', desc: 'Zincir kuralı ile geri yayılım hesabı, SGD ve Adam optimizasyon adımları', url: '' }
+      { name: '05_geri_yayilim_optimizasyon.ipynb', desc: 'Zincir kuralı ile geri yayılım hesabı, SGD ve Adam optimizasyon adımları', url: 'https://colab.research.google.com/drive/1W2I8ExazN0GwY3J-eOU6L8i5CA1KQ7PE' }
     ],
     datasets: ['Sentetik doğrusal olmayan veri setleri'],
     libraries: ['numpy', 'matplotlib'],
@@ -177,7 +177,7 @@ export const weeks: Week[] = [
       { label: 'Visualizing Optimization Algorithms', url: 'https://ruder.io/optimizing-gradient-descent/' }
     ],
     pptxFile: '05_geri_yayilim_optimizasyon.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '11xiifQUKClI46mum3e6Mpbeg4z6Nc9Qo',
   },
   {
     id: 6,
@@ -197,7 +197,7 @@ export const weeks: Week[] = [
       'Model performansı değerlendirme (evaluate)',
     ],
     notebooks: [
-      { name: '06_iris_sinir_agi.ipynb', desc: 'Iris veri seti ile Keras üzerinde ilk MLP modelinin kurulması ve eğitimi', url: '' }
+      { name: '06_iris_sinir_agi.ipynb', desc: 'Iris veri seti ile Keras üzerinde ilk MLP modelinin kurulması ve eğitimi', url: 'https://colab.research.google.com/drive/1g5P6ZTlqw12K9q7dBe_Q1Xr3e58-PpS0' }
     ],
     datasets: ['Iris Veri Seti (sklearn)'],
     libraries: ['tensorflow', 'keras', 'pandas', 'scikit-learn'],
@@ -209,7 +209,7 @@ export const weeks: Week[] = [
       { label: 'Keras Sequential Model Guide', url: 'https://keras.io/guides/sequential_model/' }
     ],
     pptxFile: '06_iris_sinir_agi.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '12qD009p8GlKFoRKSVBVYLNJl2vPvOmo5',
   },
   {
     id: 7,
@@ -229,7 +229,7 @@ export const weeks: Week[] = [
       'Gradio Sketchpad ile çizim tanıma arayüzü tasarımı',
     ],
     notebooks: [
-      { name: '07_gradio_rakam_tanima.ipynb', desc: 'MNIST rakam sınıflandırma modeli eğitimi, kaydedilmesi ve Gradio arayüzü ile dağıtılması', url: '' }
+      { name: '07_gradio_rakam_tanima.ipynb', desc: 'MNIST rakam sınıflandırma modeli eğitimi, kaydedilmesi ve Gradio arayüzü ile dağıtılması', url: 'https://colab.research.google.com/drive/1wlkfJ0oeKzDkIDKkUVfDnhT8nhDJ_cuy' }
     ],
     datasets: ['MNIST Veri Seti (tf.keras.datasets)'],
     libraries: ['tensorflow', 'keras', 'gradio', 'numpy'],
@@ -242,7 +242,7 @@ export const weeks: Week[] = [
       { label: 'MNIST Dataset Details', url: 'http://yann.lecun.com/exdb/mnist/' }
     ],
     pptxFile: '07_gradio_rakam_tanima.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '1tEaQDpeH1pAT4uKkqDywNwn2PzexjJDU',
   },
   {
     id: 8,
@@ -262,7 +262,7 @@ export const weeks: Week[] = [
       'CNN ve MLP modellerinin başarı ve parametre karşılaştırması',
     ],
     notebooks: [
-      { name: '08_cnn_giysi_siniflandirma.ipynb', desc: 'Fashion-MNIST veri setiyle CNN modeli kurulması, eğitimi ve MLP ile karşılaştırılması', url: '' }
+      { name: '08_cnn_giysi_siniflandirma.ipynb', desc: 'Fashion-MNIST veri setiyle CNN modeli kurulması, eğitimi ve MLP ile karşılaştırılması', url: 'https://colab.research.google.com/drive/1I9lQVd69D2SBNj7qCti1MBn5ysTkKetr' }
     ],
     datasets: ['Fashion-MNIST Veri Seti (tf.keras.datasets)'],
     libraries: ['tensorflow', 'keras', 'matplotlib', 'numpy'],
@@ -274,7 +274,7 @@ export const weeks: Week[] = [
       { label: 'Convolutional Neural Networks (CNNs) Guide', url: 'https://www.tensorflow.org/tutorials/images/cnn' }
     ],
     pptxFile: '08_cnn_giysi_siniflandirma.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '1GqJQWYgoeBa7J4NNU-N68AH9GqeHfTV2',
   },
   {
     id: 9,
@@ -294,7 +294,7 @@ export const weeks: Week[] = [
       'TF Flowers veri seti ile çiçek sınıflandırma projesi',
     ],
     notebooks: [
-      { name: '09_kendi_fotograflarinla_egitim.ipynb', desc: 'MobileNetV2 tabanlı transfer learning modeli ile çiçek sınıflandırması ve veri artırma teknikleri', url: '' }
+      { name: '09_kendi_fotograflarinla_egitim.ipynb', desc: 'MobileNetV2 tabanlı transfer learning modeli ile çiçek sınıflandırması ve veri artırma teknikleri', url: 'https://colab.research.google.com/drive/1bHKEPdbDoyJ4sYhSka9MGA_MbOIX6Qnt' }
     ],
     datasets: ['TF Flowers Veri Seti', 'Kullanıcının yükleyeceği özel görseller'],
     libraries: ['tensorflow', 'keras', 'numpy', 'matplotlib'],
@@ -307,7 +307,7 @@ export const weeks: Week[] = [
       { label: 'TensorFlow Image Augmentation', url: 'https://www.tensorflow.org/tutorials/images/data_augmentation' }
     ],
     pptxFile: '09_kendi_fotograflarinla_egitim.pptx',
-    pptxDriveId: '',
+    pptxDriveId: '19YhsDiiECAip21RXoCXd5HI6hI1V31bG',
   },
 ];
 
