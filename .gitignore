@@ -29,3 +29,9 @@ logs/
 # Gradio
 flagged/
 gradio_cached_examples/
+
+# Astro
+web/dist/
+web/node_modules/
+web/.astro/
+
