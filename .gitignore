@@ -8,6 +8,8 @@ env/
 
 # Jupyter
 .ipynb_checkpoints/
+*.ipynb
+
 
 # Eğitilmiş modeller (notebook'larda yeniden eğitilir)
 *.keras
